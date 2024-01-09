@@ -1,0 +1,10 @@
+body {
+    display: flex;
+}
+
+.part-1 {
+    flex: 1;
+}
+.part-2 {
+    flex: 2;
+}
