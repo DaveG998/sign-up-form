@@ -1,10 +1,79 @@
-body {
-    display: flex;
+@font-face {
+  font-family: "norse-bold";
+  src: url("fonts/Norse-Bold.otf") format("opentype"); /* Specify the path to your OTF font file */
+  /* You can also include other font formats like woff, woff2 for better browser compatibility */
 }
 
-.part-1 {
-    flex: 1;
+body {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  display: flex;
 }
-.part-2 {
-    flex: 2;
+
+span {
+  font-style: italic;
+}
+
+.left-part {
+  background-image: url("images/background-odin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-part {
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  margin-top: 35%;
+  display: flex;
+  width: 100%;
+  background-color: rgba(38, 37, 37, 0.61);
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+#title p {
+  font-family: "norse-bold";
+  font-size: 70px;
+}
+
+#photo-author {
+  color: white;
+}
+
+.left-section-one {
+  background-color: lightgray;
+  height: 35%;
+  font-size: 1.75rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-top: 125px;
+  padding-left: 35px;
+}
+
+.left-section-two {
+  background-color: white;
+  height: 30%;
+  box-shadow: 0px 5px 10px rgb(98, 96, 96);
+}
+
+.left-section-three {
+  background-color: lightgray;
+  height: 35%;
+}
+
+.left-section-one p {
+  max-width: 80%;
 }
