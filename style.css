@@ -1,3 +1,7 @@
+:root {
+  --paddingLeft: 35px;
+}
+
 @font-face {
   font-family: "norse-bold";
   src: url("fonts/Norse-Bold.otf") format("opentype"); /* Specify the path to your OTF font file */
@@ -11,7 +15,7 @@ body {
   display: flex;
 }
 
-span {
+span#italic {
   font-style: italic;
 }
 
@@ -30,12 +34,10 @@ span {
   margin: 0;
   padding: 0;
   width: 70%;
-  display: flex;
-  flex-direction: column;
 }
 
 #title {
-  margin-top: 35%;
+  margin-top: 150px;
   display: flex;
   width: 100%;
   background-color: rgba(38, 37, 37, 0.61);
@@ -47,33 +49,99 @@ span {
 #title p {
   font-family: "norse-bold";
   font-size: 70px;
+  color:white
 }
 
 #photo-author {
   color: white;
 }
 
-.left-section-one {
-  background-color: lightgray;
-  height: 35%;
+.right-section-one {
+  background-color: rgb(241, 241, 241);
+  height:310px;
   font-size: 1.75rem;
   font-weight: bold;
   box-sizing: border-box;
-  padding-top: 125px;
-  padding-left: 35px;
+  padding-top: 100px;
+  padding-left: var(--paddingLeft);
 }
 
-.left-section-two {
+.right-section-one p {
+  max-width: 750px;
+}
+
+.right-section-two {
   background-color: white;
-  height: 30%;
-  box-shadow: 0px 5px 10px rgb(98, 96, 96);
+  height: 290px;
+  /* box-shadow: 0px 5px 10px rgb(98, 96, 96); */
+  box-sizing: border-box;
+  padding-left: var(--paddingLeft);
 }
 
-.left-section-three {
-  background-color: lightgray;
+.right-section-two > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.right-section-three {
+  background-color: rgb(241, 241, 241);
   height: 35%;
 }
 
-.left-section-one p {
-  max-width: 80%;
+.input-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.75rem;
+}
+
+.form-part {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus {
+  border: 1px solid rgb(72, 72, 233);
+  box-shadow: 0px 2px 5px rgb(31, 31, 236);
+}
+
+input {
+  margin-top: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 250px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.form-btn {
+  margin-top: 100px;
+}
+
+.form-btn button {
+  font-size: 1.5rem;
+  padding: 10px 18px;
+  background-color: #596D48;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.form-btn button:hover {
+  background-color: #668649;
+  font-size: 1.6rem;
+}
+
+.form-btn p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+span#login {
+  color:#596D48;
+  font-weight: bold;
 }
