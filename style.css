@@ -34,6 +34,7 @@ span#italic {
   margin: 0;
   padding: 0;
   width: 70%;
+  background-color: rgb(241, 241, 241);
 }
 
 #title {
@@ -49,7 +50,7 @@ span#italic {
 #title p {
   font-family: "norse-bold";
   font-size: 70px;
-  color:white
+  color: white;
 }
 
 #photo-author {
@@ -62,7 +63,7 @@ a:visited {
 
 .right-section-one {
   background-color: rgb(241, 241, 241);
-  height:310px;
+  height: 310px;
   font-size: 1.75rem;
   font-weight: bold;
   box-sizing: border-box;
@@ -85,11 +86,6 @@ a:visited {
 .right-section-two > p {
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-.right-section-three {
-  background-color: rgb(241, 241, 241);
-  height: 35%;
 }
 
 .input-fields {
@@ -128,7 +124,7 @@ input {
 .form-btn button {
   font-size: 1.5rem;
   padding: 10px 18px;
-  background-color: #596D48;
+  background-color: #596d48;
   border: none;
   border-radius: 10px;
   color: white;
@@ -147,7 +143,7 @@ input {
 
 a,
 a:visited {
-  color:#596D48;
+  color: #596d48;
   font-weight: bold;
 }
 
@@ -155,4 +151,3 @@ input:invalid {
   outline: none;
   border: 1px solid red;
 }
-
